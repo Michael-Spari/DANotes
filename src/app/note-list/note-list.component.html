@@ -133,9 +133,12 @@
         </div>
     </div>
     <div>
-        
-        @for (note of noteList; track note) {
+        <app-note *ngFor="let note of getList()" [note]="note"></app-note>
+        <!-- @for (note of noteList; track note) {
             <app-note [note]="note"></app-note>
-          }
+          } -->
     </div>
+    <!-- <div>
+        <app-note *ngFor="let note of getTrashList()" [note]="note"></app-note>
+    </div> -->
 </div>
