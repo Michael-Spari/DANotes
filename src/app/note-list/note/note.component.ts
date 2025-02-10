@@ -49,7 +49,6 @@ export class NoteComponent {
   }
 
   moveToNotes(){
-    // this.note.type = 'note';
     if (this.note.id) {
       this.note.type = 'note';
       let docId = this.note.id;
@@ -61,7 +60,7 @@ export class NoteComponent {
 
   deleteNote(){
     if (this.note.id) {
-      this.noteService.deleteNote( "notes", this.note.id);
+      this.noteService.deleteNote( "trash", this.note.id);
     }
   }
 
